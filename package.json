@@ -1,0 +1,22 @@
+{
+  "name": "findmytrail",
+  "version": "1.0.0",
+  "description": "Find My Trail Mobile/Web Application",
+  "main": "index.html",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tyler Varzeas",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "jquery": "^3.6.4",
+    "line-awesome": "^1.3.0",
+    "popper.js": "^1.16.1"
+  }
+}
