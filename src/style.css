@@ -1,0 +1,34 @@
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.nav-item a {
+    color: #066617;
+}
+
+.navbar a:hover {
+    color: #99efe5;
+}
+
+.nav .active {
+    color: white;
+}
+
+.brand {
+    font-size: 24px;
+    color: white;
+}
+
+.logo {
+    font-size: 32px;
+    color: white;
+    padding: 0 5px 0 0;
+}
+
+.link-item a {
+    color: #cacaca;
+}
+
+.link-item a:hover {
+    color: #ffffff;
+}
