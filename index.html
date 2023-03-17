@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="node_modules/line-awesome/dist/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;600&display=swap"
@@ -19,8 +21,27 @@
 
 <body>
 
+    <!-- Jumbotron -->
+    <section class=" jumbotron jumbotron-fluid bg-success text-white text-center">
+        <div class="container py-3">
+            <div class="row d-sm-flex align-items-center justify-content-between">
+                <div class="col-6">
+                    <img class="img-fluid d-none d-md-flex" src="./src/images/hiking-girl.svg" alt="Hiking image">
+                </div>
+                <div class="col-md-6">
+                    <h1>Hike <span class="text-info">Fast</span>. Hike <span class="text-info">Safe</span>.</h1>
+                    <p class="h4 my-4">Find the top-rated hiking trails in your local area, rated by <span
+                            class="text-warning">YOU!</span></p>
+                    <button class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#signUp">Start
+                        Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //Jumbotron -->
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-success navbar-dark fixed-top py-1">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top py-1">
         <div class="container-fluid px-5">
             <a class="navbar-brand brand" href="#"><i class="las la-mountain logo"></i> Find My Trail</a>
 
@@ -30,7 +51,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="nav fs-5 ms-auto align-items-center flex-column flex-lg-row">
+                <ul class="nav fs-5 ms-auto align-items-center flex-column flex-md-row">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
@@ -51,25 +72,6 @@
         </div>
     </nav>
     <!-- //Navbar -->
-
-    <!-- Jumbotron -->
-    <section class=" jumbotron bg-dark text-white p-5 text-center">
-        <div class="container pt-5">
-            <div class="row d-sm-flex align-items-center justify-content-between">
-                <div class="col-6">
-                    <img class="img-fluid d-none d-md-flex" src="./src/images/hiking-girl.svg" alt="Hiking image">
-                </div>
-                <div class="col-md-6">
-                    <h1>Hike <span class="text-info">Fast</span>. Hike <span class="text-info">Safe</span>.</h1>
-                    <p class="h4 my-4">Find the top-rated hiking trails in your local area, rated by <span
-                            class="text-warning">YOU!</span></p>
-                    <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#signUp">Start
-                        Now</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- //Jumbotron -->
 
     <!-- Modal -->
     <div class="modal fade" id="signUp" tabindex="-1" aria-labelledby="signUpLabel" aria-hidden="true">
@@ -103,13 +105,76 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-success">Send message</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- //Modal -->
+
+    <!-- Main -->
+    <div class="container main py-5 text-center">
+        <div class="row row-content align-items-center mb-5 py-3">
+            <div class="col py-2">
+                <h3>Discover New Heights</h3>
+                <p class="lead d-none d-sm-block">Find, rate and explore the most popular and stunning hiking trails</p>
+                <a class="btn btn-success" href="#">Explore Trails</a>
+            </div>
+            <div class="col d-flex py-2">
+                <img class="img-fluid" src="./src/images/explore.svg" alt="hiking trail">
+            </div>
+        </div>
+        <div class="row row-content align-items-center my-5 py-3">
+            <div class="col order-last py-2">
+                <h3>Priority 1: Safety</h3>
+                <p class="lead">Find, rate and explore the most popular and stunning hiking trails</p>
+                <a class="btn btn-info" href="#">Safety Info</a>
+            </div>
+            <div class="col d-flex py-2">
+                <img class="img-fluid" src="./src/images/safety.svg" alt="hiking trail">
+            </div>
+        </div>
+        <div class="row row-content align-items-center my-5 py-3">
+            <div class="col py-2">
+                <h3>New Adventures with Friends</h3>
+                <p class="lead">Find, rate and explore the most popular and stunning hiking trails</p>
+                <a class="btn btn-success" href="#">Visit Group Hike</a>
+            </div>
+            <div class="col d-flex py-2">
+                <img class="img-fluid" src="./src/images/group-hike.svg" alt="hiking trail">
+            </div>
+        </div>
+    </div>
+    <!-- //Main -->
+
+    <!-- Footer -->
+    <footer class="footer bg-success">
+        <div class="row py-2 px-4">
+            <div class="col">
+                <h3>Links</h3>
+                <ul class="links list-unstyled">
+                    <li class="link-item"><a class="text-decoration-none fs-5" href="#">Home</a></li>
+                    <li class="link-item"><a class="text-decoration-none fs-5" href="#">Trails</a></li>
+                    <li class="link-item"><a class="text-decoration-none fs-5" href="#">Safety</a></li>
+                    <li class="link-item"><a class="text-decoration-none fs-5" href="#">About</a></li>
+                    <li class="link-item"><a class="text-decoration-none fs-5" href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col text-center justify-center">
+                <h3>Socials</h3>
+                <a href="https://instagram.com" target="_blank" class="btn btn-social-icon btn-instagram"><i
+                        class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank" class="btn btn-social-icon btn-twitter"><i
+                        class="fa fa-twitter"></i></a>
+                <a href="https://facebook.com" target="_blank" class="btn btn-social-icon btn-facebook"><i
+                        class="fa fa-facebook"></i></a>
+                <a href="https://youtube.com" target="_blank" class="btn btn-social-icon btn-google"><i
+                        class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- //Footer -->
 
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>

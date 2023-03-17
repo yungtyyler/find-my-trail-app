@@ -9,7 +9,6 @@ I have a couple of ideas for my project that I would love to develop and deploy 
 I plan to develop a website and mobile application for finding local hiking trails in the area and providing safety information on the trails. A database of the trails will be implemented and through user authentication, users will be able to create accounts and post reviews of the trails. This allows the end user to quickly find locations and plan effectively for new adventures, as well as share their thoughts and guidance about trails they have visited.
 
 
-
 ### What the MVP of your Project will Look Like:
 
 My MVP for this course will be a static website that displays a home page for the site, an about page, and a contact page. A general hiking trail safety plan page will also be a good idea for this course to implement. When it comes to long-term project design, the MVP will also need to include user authentication, trail pages, review pages for each trail, and a user home page to display the trails they have reviewed themselves.
