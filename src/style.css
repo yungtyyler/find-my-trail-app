@@ -10,10 +10,6 @@
     color: #99efe5;
 }
 
-.nav .active {
-    color: white;
-}
-
 .brand {
     font-size: 24px;
     color: white;
@@ -31,4 +27,22 @@
 
 .link-item a:hover {
     color: #ffffff;
+}
+
+.card {
+    background-color: #dbffe2;
+}
+
+.card-body {
+    background-color: rgb(245, 245, 245);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.carousel-caption {
+    background-color: rgba(55, 55, 55, 0.5);
+}
+
+.carousel {
+    border: solid #066617;
 }
