@@ -4,6 +4,7 @@
   "description": "Find My Trail Mobile/Web Application",
   "main": "index.html",
   "scripts": {
+    "scss": "node-sass -o src/ src/",
     "lite": "lite-server",
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +12,9 @@
   "author": "Tyler Varzeas",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "lite-server": "^2.6.1",
+    "node-sass": "^6.0.1",
+    "sass": "^1.60.0"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",

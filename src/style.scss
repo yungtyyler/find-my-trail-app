@@ -1,0 +1,63 @@
+$color-primary: #066617;
+$color-nav-hover: #99efe5;
+$color-secondary: #dbffe2;
+$color-nav: #cacaca;
+$transparent-black: rgba(55, 55, 55, 0.5);
+$main-font: 'Josefin Sans', sans-serif;
+
+* {
+    font-family: $main-font;
+}
+
+.nav-item {
+    a {
+        color: $color-primary;
+    }
+}
+
+.navbar {
+    a:hover {
+        color: $color-nav-hover;
+    }
+}
+
+.brand {
+    font-size: 24px;
+    color: white;
+}
+
+.logo {
+    font-size: 32px;
+    color: white;
+    padding: 0 5px 0 0;
+}
+
+.link-item {
+    a {
+        color: $color-nav;
+    }
+}
+
+.link-item {
+    a:hover {
+        color: #ffffff;
+    }
+}
+
+.card {
+    background-color: $color-secondary;
+}
+
+.card-body {
+    background-color: rgb(245, 245, 245);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.carousel-caption {
+    background-color: $transparent-black;
+}
+
+.carousel {
+    border: solid $color-primary;
+}
