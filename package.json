@@ -6,15 +6,28 @@
   "scripts": {
     "scss": "node-sass -o src/ src/",
     "lite": "lite-server",
-    "start": "npm run lite",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run watch:all",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts && copyfiles -f node_modules/line-awesome/dist/line-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin src/images/* -o dist/src/images",
+    "usemin": "usemin contact.html -d dist --htmlmin -o dist/contact.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
   },
   "author": "Tyler Varzeas",
   "license": "ISC",
   "devDependencies": {
+    "copyfiles": "^2.2.0",
+    "imagemin-cli": "^5.1.0",
     "lite-server": "^2.6.1",
     "node-sass": "^6.0.1",
-    "sass": "^1.60.0"
+    "onchange": "^7.0.0",
+    "parallelshell": "3.0.1",
+    "rimraf": "^3.0.2",
+    "sass": "^1.60.0",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
