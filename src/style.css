@@ -54,3 +54,8 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+.safety-page img {
+  max-width: 100%;
+  height: auto;
+}
