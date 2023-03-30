@@ -80,98 +80,37 @@
     <!-- //Navbar -->
 
     <!-- Main -->
-    <div
-      class="contact-bg text-center"
-      style="background-image: url(src/images/contact-bg-2.jpg)"
-    >
-      <div
-        class="color-overlay d-block justify-content-center align-items-center"
-      >
-        <div class="container p-5 mt-5">
-          <div class="row row-content bg-dark p-2 rounded">
-            <div class="col-12">
-              <h1>Get in touch.</h1>
-              <hr />
-            </div>
-            <div class="col-md-12">
-              <form>
-                <div class="form-group row py-2 mx-auto">
-                  <div class="input-group">
-                    <span class="input-group-text">First and last name</span>
-                    <input
-                      type="text"
-                      aria-label="First name"
-                      class="form-control"
-                      placeholder="First Name"
-                    />
-                    <input
-                      type="text"
-                      aria-label="Last name"
-                      class="form-control"
-                      placeholder="Last Name"
-                    />
-                  </div>
-                </div>
-                <div class="form-group row py-2 mx-auto">
-                  <div class="input-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Email"
-                      aria-label="Email"
-                    />
-                    <span class="input-group-text">@</span>
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Server"
-                      aria-label="Server"
-                    />
-                  </div>
-                </div>
-                <div class="form-group row py-2 mx-auto">
-                  <div class="input-group">
-                    <span class="input-group-text">Message</span>
-                    <textarea
-                      class="form-control"
-                      aria-label="With textarea"
-                    ></textarea>
-                  </div>
-                </div>
-                <div class="form-group row py-2 mx-auto">
-                  <div class="form-check col-md-6">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="flexRadioDefault1"
-                    />
-                    <label class="form-check-label" for="flexRadioDefault1">
-                      Contact Me for more Feedback
-                    </label>
-                  </div>
-                  <div class="form-check col-md-6">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="flexRadioDefault2"
-                      checked
-                    />
-                    <label class="form-check-label" for="flexRadioDefault2">
-                      Do Not Contact Me
-                    </label>
-                  </div>
-                </div>
-                <div class="form-group row py-2 mx-auto">
-                  <div class="col">
-                    <button class="btn btn-success" type="submit">Send</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
+    <div class="contact-bg text-center" style="background-image: url(src/images/contact-bg-2.jpg)">
+      <div class="color-overlay d-block justify-content-center align-items-center">
+        <div class="container p-5 mt-4">
+          <h1>Get in touch.</h1>
+            <form class="row bg-dark p-2 rounded text-start g-3">
+              <div class="col-md-6">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" required>
+              </div>
+              <div class="col-md-6">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lasttName" required>
+              </div>
+              <div class="col-md-8">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="col-md-4">
+                <label for="phone-number" class="form-label">Phone</label>
+                <input type="text" class="form-control" id="phone-number" placeholder="+1 (916) 622-9065">
+              </div>
+              <div class="col-md-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
+              </div>
+              <div class="col-md-12">
+                <button type="submit" class="btn btn-success">Submit</button>
+              </div>
+            </form>
+        </div> 
+        <h2 class="d-none d-md-block">Thank you for using our app! We appreciate it.</h2>
       </div>
     </div>
     <!-- //Main -->
