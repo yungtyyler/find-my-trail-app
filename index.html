@@ -87,29 +87,30 @@
                 <div class="modal-body">
                     <form>
                         <div class="mb-3">
-                            <p class="lead">Sign up with this form to start hiking!</p>
+                            <p class="lead">Sign up for the newsletter with this form!</p>
                             <div class="mb-3">
                                 <label for="first-name" class="col-form-label">First Name:</label>
-                                <input type="text" class="form-control" id="first-name">
+                                <input type="text" class="form-control" id="first-name" required>
                             </div>
                             <div class="mb-3">
                                 <label for="last-name" class="col-form-label">Last Name:</label>
-                                <input type="text" class="form-control" id="last-name">
+                                <input type="text" class="form-control" id="last-name" required>
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="col-form-label">Email:</label>
-                                <input type="email" class="form-control" id="email">
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="optInCheck" required>
+                                <label class="form-check-label" for="optInCheck">I Accept the terms and conditions.</label>
+                            </div>
+                            <hr>
+                            <div class="mb-3 text-end">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-success">Submit</button>
                             </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="message-text" class="col-form-label">Message:</label>
-                            <textarea class="form-control" id="message-text"></textarea>
-                        </div>
                     </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-success">Send message</button>
                 </div>
             </div>
         </div>
